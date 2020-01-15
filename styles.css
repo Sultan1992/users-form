@@ -1,0 +1,208 @@
+﻿/* styles */
+html {
+   font-size: 20px;
+}
+a, article, body, div, figcaption, figure, footer, header, h1, 
+h2, h3, img, li, nav, p, section, ul,
+fieldset,form,input,label,legend,textarea {
+   border: 0;
+   padding: 0;
+   margin: 0;
+}
+img {
+   max-width: 100%;
+   height: auto;
+   width: auto;
+}
+ul {
+   list-style-type: none;
+}
+
+/* body and page container */
+body {
+   font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+   max-width: 800px;
+   margin: 0 auto;
+   border-left: 3px solid black;
+   border-right: 3px solid black;
+   position: relative;
+   border-top-left-radius: 25px;
+   border-bottom-right-radius: 25px;
+}
+
+/* skip navigation link */
+p.skipnavigation a {
+   position: absolute;
+   left: -10000px;
+}
+p.skipnavigation a:focus {
+   left: auto;
+   right: 1em;
+   top: 1em;
+   background-color: white;
+   color: #082008;
+   z-index: 2;
+}
+
+/* header section */
+header {
+   padding: 0.5em;
+   background-color: #082008;
+   border-top-left-radius: 22px;
+}
+h1 img {
+   margin: 0 auto;
+   display: block;
+}
+
+/* site navigation */
+nav.sitenavigation {
+   padding: 2%;
+   text-align: center;
+   background-color: #93ad78;
+}
+nav.sitenavigation li {
+   margin: 0 1em;
+   display: inline-block;
+}
+nav.sitenavigation a:link {
+   color: white;
+   text-decoration: none;
+   font-weight: bold;
+}
+nav.sitenavigation a:visited {
+   color: #dddddd;
+}
+nav.sitenavigation a:hover, nav.sitenavigation a:focus {
+   text-shadow: 0 0 6px #082008;
+}
+
+/* main content */
+article {
+   padding: 2%;
+   background-color: linen;
+   overflow: auto;
+}
+article h2 {
+   margin-bottom: 0.6em;
+   font-family: "Krona One", Arial, Helvetica, sans-serif;
+   font-size: 1.6em;
+   line-height: 2em;
+   font-weight: 400;
+   text-align: center;
+}
+article h3 {
+   margin: 0 0 1em 1em;
+   font-family: "Krona One", Arial, Helvetica, sans-serif;
+   font-size: 1.2em;
+   clear: right;
+   text-align: center;
+}
+article figure {
+   max-width: 100%;
+   margin: 0 0 1em 1em;
+   float: right;
+}
+article figcaption {
+   text-align: center;
+   font-weight: bold;
+}
+article p {
+   margin: 0 2em 1em;
+}
+.resume{padding-left:10px;
+margin:0auto;
+font-size:14px;
+}
+#resume{text-align:center;
+        color:yellow;
+}
+/*form styles*/
+  form{padding:0.5em;
+  background-color:#082008;}
+  /*fieldset styles*/
+  #namefield:After{color:red;
+  Content:"*";
+}
+  fieldset{margin-bottom:0.5em;
+  padding:2.5em 2% 0.5em;
+  position:relative;
+  background-color:#93ad78;}
+fieldset fieldset{padding-top:0.4em;
+ border:2px solid #082008;}
+ form>fieldset>legend{font-size:1.25em;
+ font-family:PTSansCaption,Georgia,Times New Roman, sans-serif;
+ position:absolute;
+ top:0.6em;}
+ fieldset.check_In{width:40%;
+ float:left;}
+ fieldset.check_out{width:40%;
+ float:right;}
+fieldset.parking legend{clear:both;}
+.submitbottom {
+padding:0.5em 0;
+margin-bottom:0;
+text-align:center;
+} 
+/*text field styles*/
+textarea,input{padding:0.2em;
+font-size:1em;}
+textarea{width:99%;
+display:block;}
+.contact_info  input{position:absolute;
+left:5em;}
+
+#namefield,#Emailfield{width:30em;}
+#phonefield{width:12em;}
+
+.party_size input{margin-right:2em;
+width:3em;}
+#pk{width:3em;}
+#submit{font-family:PTSansCaption,Georgia,Times New Roman,Times 
+serif;
+background-color:#e3d5ba;
+font-size:1.25em;
+border-top-left-radius:10px;
+border-bottom-right-radius:10px;}
+/*label styles*/
+label{margin-bottom:0.2em;
+line-height:1.6em;}
+.contact_info label{margin:0.6em 0;
+display:block;
+position:relative;}
+
+.bed label{margin-right:1.6em;}
+
+#check_In,#check_out{position:absolute;
+left:-10000px;}
+/* footer section */
+footer {
+   padding: 10px;
+   text-align: center;
+   color: white;
+   background-color: #082008;
+   border-bottom-right-radius: 22px;
+}
+
+/* print styles */
+@media print {
+   article {
+      width: 100%;
+   }
+   article, body, .container, footer {
+      border: 0;
+      color: rgb(0,0,0);
+      background-color: rgb(255,255,255);
+   }
+   body {
+      max-width: 100%;
+   }
+   nav {
+      display: none;
+   }
+}
+@page {
+   margin: 0.75in;
+}

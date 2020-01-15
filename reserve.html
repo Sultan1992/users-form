@@ -1,0 +1,230 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>Cosmopolitan of las Vegas, Reservation Form</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width">
+      <script src="modernizr.custom.40753.js"></script>
+      <link href='http://fonts.googleapis.com/css?family=Krona+One' rel='stylesheet' type='text/css'>
+	   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.js"></script>
+      <link rel="stylesheet" href="styles.css">
+	  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+      </head>
+   <body>
+      <div class="container">
+         <p class="skipnavigation"><a href="#contentstart">Skip navigation</a></p> 
+         <header>
+            <h1><a href="index.html"><img src="images/cosmo.png" width="360" height="220" alt="Cosmopolitan of las Vegas"></a></h1>
+         </header>
+         <nav class="sitenavigation">
+            <ul>
+               <li><a href="cosmo.html">Home</a></li>
+			  <li><a href="reserve.html">Reservations</a></li>
+               <li><a href="nearby.html">What&#39;s Nearby</a></li>
+            </ul>
+         </nav>
+         <article id="contentstart">
+            <h2>Reservations</h2>
+			<form action="results.html">
+			 <fieldset class="contact_info">
+			     <legend>Contact Information</legend>
+			         <label for="namefield">
+				         Name
+					    <input type="text" name="Name"  placeholder="FirstName and LastName" id="namefield " required="required">
+				    </label>
+					<label for="Emailfield">
+				         Email
+					    <input type="email" name="Email" placeholder="address@example.com" id="Emailfield" required="required">
+				    </label>
+					<label for="phonefield">
+				         Phone
+					    <input type="tel" name="Phone" placeholder="phone number" id="phonefield" required="required">
+				    </label>
+			 </fieldset>
+			 <script>
+			   $("input[required]").parent("label").addClass("required");
+			 </script>
+			 <fieldset class="reservation_info">
+			 <legend>Reservation Information</legend>
+			     <fieldset class="party_size">
+			          <legend>Party size</legend>
+					         <label for="numParty">
+					               Number in your party
+								   <input type="number" name="Number in your party"
+								   id="numParty">
+					         </label>
+							  <label for="numRooms">
+					               Number of Rooms required
+								   <input type="number" name="Number of Rooms required"
+								   id="numRooms">
+					         </label>
+			      </fieldset> 
+                  <fieldset class="bed">
+			           <legend>Bed preference</legend>
+					           <label for="k/q">
+								   <input type="checkbox" name="Bed Room"
+								   id="k/q">
+								   King/Queen
+					         </label>
+							 <label for="twin">
+					               <input type="checkbox" name="bed"
+								   id="twin">
+								   Twin
+					         </label>
+							 <label for="other">
+					               <input type="checkbox" name="bed"
+								   id="other">
+								   Other/Mix (specify in additional information)
+					         </label>
+			      </fieldset>
+                   <fieldset class="check_In">
+			         <legend>Check in date</legend>
+					         <label for="check_In_month">
+							 </label>
+							 <select id="check_In_month" name="Check-In month">
+							         <option value="01">January</option>
+									 <option value="02">February</option>
+									 <option value="03">March</option>
+									 <option value="04">April</option>
+									 <option value="05">May</option>
+									 <option value="06">June</option>
+									 <option value="07">July</option>
+									 <option value="08">August</option>
+									 <option value="09">September</option>
+									 <option value="10">October</option>
+									 <option value="11">November</option>
+									 <option value="12">December</option>
+								</select>
+							 <label for="check_In_day">
+							 </label>
+							     <select id="check_In_day" name="Check-In day"required>
+							         <option value="01">1</option>
+									 <option value="02">2</option>
+									 <option value="03">3</option>
+									 <option value="04">4</option>
+									 <option value="05">5</option>
+									 <option value="06">6</option>
+									 <option value="07">7</option>
+									 <option value="08">8</option>
+									 <option value="09">9</option>
+									 <option value="10">10</option>
+									 <option value="11">11</option>
+									 <option value="12">12</option>
+									 <option value="13">13</option>
+									 <option value="14">14</option>
+									 <option value="15">15</option>
+									 <option value="16">16</option>
+									 <option value="17">17</option>
+									 <option value="18">18</option>
+									 <option value="19">19</option>
+									 <option value="20">20</option>
+									 <option value="21">21</option>
+									 <option value="22">22</option>
+									 <option value="23">23</option>
+									 <option value="24">24</option>
+									 <option value="25">25</option>
+									 <option value="26">26</option>
+									 <option value="27">27</option>
+									 <option value="28">28</option>
+									 <option value="29">29</option>
+									 <option value="30">30</option>
+									 <option value="31">31</option>
+								</select>
+							 <label for="check_In_year">
+							 </label>
+							   <select id="check_In_year" name="Check-in year">
+							           <option value="2019">2019</option>
+									   <option value="2020">2020</option>
+									   <option value="2021">2021</option>
+								</select>	   
+			      </fieldset>
+                   <fieldset class="check_out">
+			          <legend>Check out date</legend>
+					         <label for="check_out_month">
+							 </label>
+							 <select id="check_out_month" name="Check-out month">
+							         <option value="01">January</option>
+									 <option value="02">February</option>
+									 <option value="03">March</option>
+									 <option value="04">April</option>
+									 <option value="05">May</option>
+									 <option value="06">June</option>
+									 <option value="07">July</option>
+									 <option value="08">August</option>
+									 <option value="09">September</option>
+									 <option value="10">October</option>
+									 <option value="11">November</option>
+									 <option value="12">December</option>
+								</select>
+							 <label for="check_out_day">
+							 </label>
+							     <select id="check_out_day" name="Check-out day"required>
+							         <option value="01">1</option>
+									 <option value="02">2</option>
+									 <option value="03">3</option>
+									 <option value="04">4</option>
+									 <option value="05">5</option>
+									 <option value="06">6</option>
+									 <option value="07">7</option>
+									 <option value="08">8</option>
+									 <option value="09">9</option>
+									 <option value="10">10</option>
+									 <option value="11">11</option>
+									 <option value="12">12</option>
+									 <option value="13">13</option>
+									 <option value="14">14</option>
+									 <option value="15">15</option>
+									 <option value="16">16</option>
+									 <option value="17">17</option>
+									 <option value="18">18</option>
+									 <option value="19">19</option>
+									 <option value="20">20</option>
+									 <option value="21">21</option>
+									 <option value="22">22</option>
+									 <option value="23">23</option>
+									 <option value="24">24</option>
+									 <option value="25">25</option>
+									 <option value="26">26</option>
+									 <option value="27">27</option>
+									 <option value="28">28</option>
+									 <option value="29">29</option>
+									 <option value="30">30</option>
+									 <option value="31">31</option>
+								</select>
+							 <label for="check_out_year">
+							 </label>
+							   <select id="check_out_year" name="Check-out year">
+							           <option value="2019">2019</option>
+									   <option value="2020">2020</option>
+									   <option value="2021">2021</option>
+								</select>
+			        </fieldset>
+                    <fieldset class="parking">
+			            <legend>Parking</legend>
+						<label for="pk">
+						      I need parking for
+							  <input type="text" name="I need parking for" id ="pk">
+							  Vehicle(s).
+						</label>
+			       </fieldset>					
+			  </fieldset>
+			   <fieldset class="additionalinfo ">
+			     <legend>Additional Information</legend>
+				     <label for="comment">
+					    Feedback, special requests, or other information
+						<textarea name="Feedback" id="comment" rows="4">
+						</textarea>
+				     </label>
+			   </fieldset>
+			  <fieldset class="submitbottom">
+					<input type="submit" value ="Submit"  id="submit" >
+			  </fieldset>
+			</form>
+         </article>
+         <footer>
+           <p>Cosmopolitan of las Vegas<br>&copy; sultan Feto : 2019 </p>
+         </footer>
+      </div>
+   </body>
+</html>

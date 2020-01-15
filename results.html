@@ -1,0 +1,56 @@
+﻿<?php
+echo"you viewed this page by";
+echo date("h,i,js,F,y");
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>Cosmopolitan of las Vegas, conformation page</title>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width">
+      <script src="modernizr.custom.40753.js"></script>
+      <link href='http://fonts.googleapis.com/css?family=Krona+One' rel='stylesheet' type='text/css'>
+      <link rel="stylesheet" href="styles.css">
+	  
+   </head>
+   <body>
+      <div class="container">
+         <p class="skipnavigation"><a href="#contentstart">Skip navigation</a></p> 
+         <header>
+            <h1><a href="index.html"><img src="images/cosmo.png" width="368" height="65" alt="Cosmopolitan of las Vegas"></a></h1>
+         </header>
+         <nav class="sitenavigation">
+            <ul>
+               <li><a href="cosmo.html">Home</a></li>
+			   <li><a href="reserve.html">Reservations</a></li>
+               <li><a href="nearby.html">What&#39;s Nearby</a></li>
+			    <li><a href="test.html">php</a></li>
+               </UL>
+         </nav>
+         <article id="contentstart">
+            <h2>Your form has been submitted</h2>
+               <h3>You entered the following data:</h3>
+               <p>=====================================</P> 
+               <script>
+                   var formData = location.search;
+                   formData = formData.substring(1, formData.length);
+                   while (formData.indexOf("+") !== -1) {
+                      formData = formData.replace("+", " ");
+                   }
+                    formData = decodeURIComponent(formData);
+                   var formArray = formData.split("&");
+                   for (var i = 0; i < formArray.length; i = i + 1) {
+                      document.write("<p>" + formArray[i] + "</p>");
+                   }
+               </script>
+			   <p>================================================</P>
+			   <p> Thanks for being here.</p>
+         </article>
+         <footer>
+           <p>Cosmopolitan of las Vegas<br>&copy; sultan Feto : 2019</p>
+         </footer>
+      </div>
+   </body>
+</html>
